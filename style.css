@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  gap: 5vw;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 15vw;
+  aspect-ratio: 1;
+  border: 1px solid black;
+}
