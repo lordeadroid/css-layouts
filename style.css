@@ -5,17 +5,45 @@
 }
 
 body {
-  font-size: 32px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "logo content links";
+  margin: 10px 0px;
+}
+
+.logo {
+  grid-area: logo;
+  margin: 0 auto;
+
+  & img {
+    width: 325px;
+  }
+}
+
+.container {
+  font-size: 24px;
   flex-direction: column;
+  margin: 0 auto;
+  grid-area: content;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
+  margin: 20px 0px;
+
+  & img {
+    width: 200px;
+  }
 }
 
-.box {
-  aspect-ratio: 1;
-  border: 1px solid black;
-}
+.links {
+  grid-area: links;
+  display: flex;
+  justify-content: space-evenly;
 
-img {
-  width: 250px;
+  & a {
+    font-size: 24px;
+  }
 }
