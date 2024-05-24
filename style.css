@@ -1,11 +1,15 @@
 body {
+  font-size: 32px;
   display: flex;
-  gap: 5vw;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
 .box {
-  height: 15vw;
   aspect-ratio: 1;
   border: 1px solid black;
+}
+
+img {
+  width: 250px;
 }
