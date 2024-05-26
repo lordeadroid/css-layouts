@@ -47,3 +47,22 @@ body {
     font-size: 24px;
   }
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 5px;
+  }
+
+  .links {
+    display: flex;
+    margin: 0px 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    & a {
+      font-size: 32px;
+    }
+  }
+}
