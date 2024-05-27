@@ -58,19 +58,37 @@ main {
 
 @media screen and (max-width: 450px) {
   body {
+    width: unset;
+  }
+
+  nav {
+    margin: unset;
     display: flex;
     flex-direction: column;
-    margin: 0px 5px;
+  }
+
+  .logo img {
   }
 
   .links {
+    width: 100%;
     display: flex;
-    margin: 0px 20px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin: 20px 0px;
+    flex-direction: row;
+    justify-content: space-around;
 
     & a {
-      font-size: 32px;
+      font-size: 24px;
+    }
+  }
+
+  .img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    & img {
+      width: 100%;
+      display: flex;
     }
   }
 }
